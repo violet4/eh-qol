@@ -1,0 +1,4 @@
+bin/
+dlls/
+obj/
+*.dll

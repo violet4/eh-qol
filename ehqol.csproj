@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/Mods/0_TFP_Harmony/0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="15SlotToolbelt">
+      <HintPath>dlls\15SlotToolbelt.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="LogLibrary.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/LogLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.dll">
+      <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="VehicleDamagePatch">
+      <HintPath>dlls\VehicleDamagePatch.dll</HintPath>
+    </Reference>
+    <Reference Include="WanderingHordeFrequency">
+      <HintPath>dlls\WanderingHordeFrequency.dll</HintPath>
+    </Reference>
+    <Reference Include="ZombieFallDamage">
+      <HintPath>dlls\ZombieFallDamage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  <Exec Command="cp $(TargetPath) $(ProjectDir)/eh-qol/ehqol.dll" />
+</Target>
+</Project>
