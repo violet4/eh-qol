@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <Name value="Eldritch Hollows QoL: No Quest Lockout" />
+  <DisplayName value="EH-QoL-No-Quest-Lockout" />
+  <Description value="When two partied players are running a quest together and one disconnects and reconnects, quests can't be attempted again for approximately 1 in-game hour. This removes that limitation. Quality of Life improvements by Eldritch Hollows." />
+  <Author value="eldritch_hollows" />
+  <Version value="0.0.1" />
+  <Website value="https://github.com/violet4/eh-qol" />
+</xml>

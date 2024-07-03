@@ -1,4 +1,5 @@
-bin/
 dlls/
-obj/
 *.dll
+bin
+Debug
+obj

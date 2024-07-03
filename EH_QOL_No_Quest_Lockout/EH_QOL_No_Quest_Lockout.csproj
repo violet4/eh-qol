@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>..\..\..\..\..\..\..\..\mnt\stuff\SteamLibrary\steamapps\common\7dtd\1.0\Mods\0_TFP_Harmony\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\..\..\..\..\..\mnt\stuff\SteamLibrary\steamapps\common\7dtd\1.0\7DaysToDie_Data\Managed\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>..\..\..\..\..\..\..\..\mnt\stuff\SteamLibrary\steamapps\common\7dtd\1.0\7DaysToDie_Data\Managed\UnityEngine.dll</HintPath>
+      </Reference>
+        <Reference Include="LogLibrary.dll">
+            <HintPath>/mnt/stuff/SteamLibrary/steamapps/common/7dtd/1.0/7DaysToDie_Data/Managed/LogLibrary.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <!-- Copy to.. -->
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Command="cp $(TargetPath) $(ProjectDir)/EH_QOL_No_Quest_Lockout/" />
+    </Target>
+
+</Project>
