@@ -12,6 +12,7 @@ License: MIT
 Source: https://github.com/violet4/eh-qol/tree/main/EH_QOL_No_Quest_Lockout  
 Introduced in 7DtD version: 1.0 (b312)  
 First Release Date: 2024-07-03  
+See this mod on Nexus Mods: [https://www.nexusmods.com/7daystodie/mods/5110](https://www.nexusmods.com/7daystodie/mods/5110)
 
 
 ## Dependencies
