@@ -14,3 +14,5 @@ Introduced in 7DtD version: 1.0 (b312)
 First Release Date: 2024-07-03  
 
 To install, unzip either the zip or 7z, and place the resulting folder named `EH_QOL_No_Quest_Lockout` into your `7 Days To Die/Mods` folder (create the "Mods" folder if it doesn't already exist).
+
+This mod depends on `0_TFP_Harmony` which comes preinstalled with your 7 Days to Die instance at `7 Days To Die/Mods/0_TFP_Harmony`. If it is missing, you can reobtain it by using the "Check File Integrity" in Steam.
