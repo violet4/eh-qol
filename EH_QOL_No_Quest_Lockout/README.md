@@ -23,6 +23,10 @@ This mod depends on `0_TFP_Harmony` which comes preinstalled with your 7 Days to
 
 To install, unzip either the zip or 7z, and place the resulting folder named `EH_QOL_No_Quest_Lockout` into your `7 Days To Die/Mods` folder (create the "Mods" folder if it doesn't already exist).
 
+## Build your own
+
+Ensure that you have the necessary `dotnet` program on your command line. Then, `cd` into this directory and run: `dotnet build`. The dll will be placed directly into the `EH_QOL_No_Quest_Lockout` folder. Then the `EH_QOL_No_Quest_Lockout` folder can be copied into your Mods folder.
+
 ## See Also
 
 For more mods by Eldritch Hollows, see [https://github.com/violet4/eh-qol](https://github.com/violet4/eh-qol)!
